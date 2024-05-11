@@ -1,0 +1,325 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+:root{
+    --main-color: #8d590c;
+    --black: #13131a;
+    --bg: rgba(3, 3, 3, 0.288);
+    --border: .1rem solid rgba (225,225,225,.3);
+}
+*{
+    margin: 0;
+    padding: 0;
+    font-family:'Roboto', sans-serif;   
+    box-sizing: border-box;
+    text-decoration: none;
+    text-transform: capitalize;
+    transition: .2s linear;
+    outline: none; border: none;
+
+
+}
+body{
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    width: 100%;
+    height: 100vh;
+}
+html {
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-padding-top: 9rem;
+    scroll-behavior: smooth;
+}
+html::-webkit-scrollbar {
+    width: .8rem;
+}
+html::-webkit-scrollbar-track{
+    background: transparent;
+}
+html::-webkit-scrollbar-thumb{
+    background: #fff;
+    border-radius: 5rem;
+}
+section{
+    padding: 2rem 7%;
+}
+
+
+header{
+    background: black;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1.5rem 7%;
+    position: fixed;
+    top: 0; left: 0; right: 0;
+    border-bottom: var(--border);
+    z-index: 1000;
+    width: 100vw;
+	height: 12vh;
+    min-height: 8vh;
+    box-shadow: #000000;
+    font-family: 'Poppins', sans-serif;
+}
+.logo img{
+
+    width: 150px;
+    size-adjust: 20;
+    align-items: none;
+    text-shadow: #13131a;
+    margin-left: 25%;
+    margin-top: 5%;
+
+}
+.header .navbar a{
+    margin: auto;
+    font-size: 1.7rem;
+    color: #ebe2e2;
+    font-weight: lighter;
+    text-shadow: #000000;
+    font-family: 'Poppins', sans-serif;
+}   
+
+.header .navbar a:hover {
+    color:var(--main color);
+    border-bottom: .1rem solid var(--main-color);
+    padding: .5rem;
+}
+
+.header .icons div{
+    color: #fff;
+    cursor: pointer;
+    font-size: 2.5rem;
+    margin-left: 2rem;
+    font-weight: lighter;
+    display: none;
+
+}
+.header .icons div:hover {
+    color: var(--main-color);
+}
+body{
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    width: 100%;
+    height: 100vh;
+}
+body::-webkit-scrollbar{
+    display: none;
+}
+.side-menu{
+    background: #3a3023;
+    position: fixed;
+    width: 250px;
+    height: 100%;
+    margin-top: 5%;
+    color: white;
+    padding: 40px 30px;
+}
+.side-menu center h2{
+    color: #3d2403;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: lighter;
+    background-color: #d1bda1;
+}
+.side-menu a{
+    background-color: transparent;
+    display: block;
+    line-height: 70px;
+    color: white;
+    margin: 0;
+    transition: 0.5s;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    margin-top: 2px;
+    margin-bottom: 2px;
+    transform: scale(.7s);
+    transform-origin: 0% 0%;
+    transition-timing-function: ease-out;
+
+}
+.side-menu a:hover{
+    padding-left: 10px;
+    color: #4e2e04;
+    transform: perspective(300px) rotateY(-5deg);
+}
+
+.side-menu span{
+    font-size: 20px;
+    margin-left: 10px;
+    color: rgb(247, 247, 247);
+    
+}
+.side-menu span:hover {
+    color: #8b6d44;
+}
+.side-menu i{
+    font-size: 20px;
+    margin-left: 20px;
+    color: white;
+}
+ul .menu-bar{
+    float: right;
+    margin-top: 20px;
+    margin-right: 45px;
+    
+}
+
+
+.container {
+    max-width: 900px;
+    margin: 0;
+    padding: 3rem 2rem;
+    margin-left: 20%;
+}
+.container .title{
+    font-size: 3rem;
+    color: #8b6d44;
+    margin-top: 10rem;
+    text-transform: uppercase;
+    text-align: left;
+    margin-bottom: 4rem;
+}
+.container .title:hover{
+    color: #362b1b;
+}
+
+.container .pcard {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(30rem,1fr));
+    gap: 2rem;
+
+}
+.container .pcard .card{
+    text-align: center;
+    padding: 3rem 2rem;
+    background-color: #fff;
+    box-shadow: 0.5rem 1rem rgba(0, 0, 0,.1);
+    outline: .1rem solid#ccc;
+    cursor: pointer;
+    height: 37rem;
+}
+
+.container .pcard .card:hover{
+    outline: .2rem solid #8d590c;
+
+}
+.container .pcard .card img{
+    height: 25rem;
+}
+.container .pcard .card:hover img{
+    transform: scale(.9);
+}
+.pcard {
+    margin-left: 10%;
+    text-align: right;
+    left: 70%;
+
+}
+.container .pcard .card h2{
+    padding: 1.5rem 0;
+    font-size: 2rem;
+    color: #4e2e04;
+    text-align: center;
+    justify-content: center;
+}
+.container .pcard .card:hover h2{
+    color: #a0630e;
+}
+.container .pcard .card {
+    font-size: 4rem;
+    color: black;
+    font-weight: lighter;
+}
+
+
+
+.conpre {
+    position: fixed;
+    top: 0; 
+    left: 0;
+    min-height: 100vh;
+    width: 100%;
+    background: rgba(0,0,0,.8);
+    display: none;
+    align-items: center;
+    justify-content: center;
+}
+.conpre .pr{
+    top: 40px;
+    bottom: 60px;
+    display: none; 
+    padding: 2rem;
+    text-align: center;
+    background: #fff;
+    position: relative;
+    margin: 2rem;
+    width: 45rem;
+    height: 51rem;
+    align-items: center;
+    justify-content: center; 
+    border-radius: 5%;
+  
+}
+
+.conpre .pr.active{
+    display: inline-block;
+}
+.conpre .pr img{
+    height: 25rem;
+
+}
+.conpre .pr .fa-times{
+    position: absolute;
+    top: 1.5rem; right: 2rem;
+    cursor: pointer;
+    color: #4e2e04;
+    font-size: 3rem;
+}
+.conpre .pr .fa-times:hover{
+    transform: rotate(90deg);
+}
+.conpre .pr h2{
+    color: #4e2e04;
+    margin-top: 3%;
+    font-size: 2.3rem;
+    text-transform: none;
+    margin-bottom: 5%;
+
+}
+.conpre .pr h4{
+    font-size: 1.4rem;
+    color: #313131;
+    font-weight: lighter;
+    font-family: 'Poppins', sans-serif; 
+    text-transform: none;
+    justify-content: center;
+    text-align: justify;
+    margin: 5%;
+
+}
+.conpre .pr p{
+
+
+    font-size: 1.5rem;
+    color: #313131;
+    text-align: center;
+    text-transform: none;
+}
+.conpre .pr .price{
+
+    font-size: 2.5rem;
+    color: #8d590c;
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 70%;
+    text-transform: none;
+
+
+}
+

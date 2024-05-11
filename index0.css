@@ -1,0 +1,339 @@
+ @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+:root{
+    --main-color: #8d590c;
+    --black: #13131a;
+    --bg: rgba(3, 3, 3, 0.288);
+    --border: .1rem solid rgba (225,225,225,.3);
+}
+
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family:'Roboto', sans-serif;   
+    box-sizing: border-box;
+    text-decoration: none;
+    text-transform: capitalize;
+    transition: .2s linear;
+
+}
+body{
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    width: 100%;
+    height: 100vh;
+}
+html {
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-padding-top: 9rem;
+    scroll-behavior: smooth;
+}
+html::-webkit-scrollbar {
+    width: .8rem;
+}
+html::-webkit-scrollbar-track{
+    background: transparent;
+}
+html::-webkit-scrollbar-thumb{
+    background: #fff;
+    border-radius: 5rem;
+}
+section{
+    padding: 2rem 7%;
+}
+
+
+header{
+    background: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1.5rem 7%;
+    position: fixed;
+    top: 0; left: 0; right: 0;
+    border-bottom: var(--border);
+    z-index: 1000;
+    width: 100vw;
+	height: 12vh;
+    min-height: 8vh;
+    box-shadow: #000000;
+    font-family: 'Poppins', sans-serif;
+}
+.logo img{
+
+    width: 250px;
+    size-adjust: 20;
+    align-items: none;
+    text-shadow: #13131a;
+    margin-left: 25%;
+    margin-top: 19%;
+}
+.header .navbar a{
+    margin: auto;
+    font-size: 1.7rem;
+    color: #ebe2e2;
+    font-weight: lighter;
+    text-shadow: #000000;
+    font-family: 'Poppins', sans-serif;
+}   
+
+.header .navbar a:hover {
+    color:var(--main color);
+    border-bottom: .1rem solid var(--main-color);
+    padding: .5rem;
+}
+
+.header .icons div{
+    color: #fff;
+    cursor: pointer;
+    font-size: 2.5rem;
+    margin-left: 2rem;
+    font-weight: lighter;
+    display: none;
+
+}
+.header .icons div:hover {
+    color: var(--main-color);
+}
+.home {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    background-size: cover;
+    background-position: center;
+    background-image: url(img/bago.jpg);
+    
+}
+
+.home .content {
+    max-width: 60rem;
+}
+.home .content h2{
+    font-size: 5rem;
+    text-transform: uppercase;
+    color: #fff;
+    text-shadow: #000000;
+}
+.new {
+    background-color:#8d590c;
+    border-radius: 0px;
+    padding: 3px 6px;
+    bottom: 30px;
+}
+.new:hover {
+    background-color: #8d590c;
+}
+.home .content p{
+    font-size: 2rem;
+    font-weight: lighter;
+    line-height: 1rem 0;
+    padding: 1rem;
+    color: #fff;
+    font-style: italic;
+    text-shadow: #000000;
+    text-transform: none;
+}
+.home .content p span{
+    font-size: 2rem;
+    font-weight: lighter;
+    line-height: 1rem 0;
+    padding: 1rem;
+    color: #fff;
+    font-style: italic;
+    text-shadow: #000000;
+    text-transform: none;
+}
+.btn {
+    border:2px solid #fff ;
+    color: whitesmoke;
+    padding: 12px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    border-radius: 12px;
+}
+.btn:hover {
+    color: var(--main-color);
+}
+
+
+.gallery{
+    width: 80%;
+    height: 80vh;
+    padding: 70px 0;
+    display: flex;
+    gap: 2rem;
+}
+
+.big h1 {
+    color: white;
+    font:'Poppins', sans-serif ;
+    font-size: 30px;
+    transform: none;
+}
+.square{
+    width: 160px;
+    height: 125px;
+    display: inline-block;
+    border-radius: 10px;
+    padding: 15px 25px;
+    box-sizing: border-box;
+    cursor: pointer;
+    margin: 10px 15px;
+    background-position: center;
+    background-size: cover;
+    box-shadow: 4px 6px 30px #000000;
+    transition: transform 0.5s;
+}
+.square:hover {
+    transform: translateY(-10px);
+}
+.one {
+    background-image: url(promo/1.png);
+
+}
+.two {
+    background-image: url(promo/2.png);
+
+}
+.three {
+    background-image: url(promo/3.png);
+}
+.square h1{
+    display: none;
+}
+.hi {
+    position: absolute;
+    bottom: 52%;
+    left: 55%;
+}
+
+.circle {
+    position: absolute;
+    top: 52%;
+    left: 55%;
+}
+
+.food{
+    width: 135px;
+    height: 135px;
+    display: inline-block;
+    border-radius: 50%;
+    padding: 15px 25px;
+    box-sizing: border-box;
+    cursor: pointer;
+    margin: 3px 5px;
+    background-position: center;
+    background-size: cover;
+    box-shadow: 4px 6px 30px #000000;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    transition: transform 0.5s;
+}
+.food h1 {
+    color: white;
+    font:'Poppins', sans-serif ;
+    font-size: 30px;
+    transform: none;
+    display: none;
+}
+.food:hover {
+    transform: translateY(-10px);
+}
+
+.uno {
+    background-image: url(bestseller/rat.jpg);
+}
+.dos {
+    background-image: url(pic/s6.webp);
+}
+.tres {
+    background-image: url(pic/s5.jpg);
+}
+.quatro {
+    background-image: url(pic/s4.jpg);
+}
+
+.square h1{
+    display: none;
+}
+
+c
+
+.conpre {
+    position: fixed;
+    top: 0; 
+    left: 0;
+    min-height: 100vh;
+    width: 100%;
+    background: rgba(0,0,0,.8);
+    display: none;
+    align-items: center;
+    justify-content: center;
+    
+}
+.conpre .pr{
+    display: none;
+    padding: 2rem;
+    text-align: center;
+    background: #fff;
+    position: relative;
+    margin: 2rem;
+    width: 40rem;
+    border-radius: 5%;
+}
+.conpre .pr.active{
+    display: inline-block;
+}
+.conpre .pr img{
+    height: 25rem;
+}
+.conpre .pr .fa-times{
+    position: absolute;
+    top: 1rem;
+    right: 1.5rem;
+    cursor: pointer;
+    color: #8d590c;
+    font-size: 3rem;
+
+}
+.conpre .pr .fa-times:hover{
+    transform: rotate(90deg);
+}
+.conpre .pr h2{
+    color: #4e2e04;
+    margin-top: 3%;
+    font-size: 2.3rem;
+    text-transform: none;
+    margin-bottom: 5%;
+
+}
+.conpre .pr h4{
+    font-size: 1.4rem;
+    color: #313131;
+    font-weight: lighter;
+    font-family: 'Poppins', sans-serif; 
+    text-transform: none;
+    justify-content: center;
+    text-align: justify;
+    margin: 1%;
+
+}
+.conpre .pr p{
+    font-size: 1.5rem;
+    color: #313131;
+    text-align: center;
+    text-transform: none;
+}
+.conpre .pr .price{
+    font-size: 2.5rem;
+    color: #8d590c;
+    text-align: center;
+    text-transform: none;
+
+}
